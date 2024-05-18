@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./styles/App.scss";
 import { Product } from "./types/Product";
-import Slider from "./components/Slider";
+import Slider from "./pages/Slider";
 import { fetchData } from "./components/FetchData";
 
 const App: React.FC = () => {
@@ -20,7 +20,15 @@ const App: React.FC = () => {
   };
 
   return (
-    <div>{isLoading ? <p>Loading...</p> : <Slider products={products} />}</div>
+    <div className="app">
+      {isLoading ? (
+        <div className="spinner-container">
+          <div className="spinner"></div>
+        </div>
+      ) : (
+        <Slider products={products} />
+      )}
+    </div>
   );
 };
 
