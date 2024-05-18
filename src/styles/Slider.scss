@@ -1,0 +1,51 @@
+@import "./variables.scss";
+@import "./mixin.scss";
+
+.slider {
+  position: relative;
+  max-width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+  .slider__slides {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease;
+
+    img {
+      min-width: 100%;
+      height: 100vh;
+      object-fit: cover;
+    }
+  }
+
+  .slider__overlay {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, black, transparent);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+  }
+
+  @media only screen and (max-width: 1024px) {
+    .slider__slides {
+      width: 100%;
+    }
+  }
+
+  @media only screen and (max-width: 480px) {
+    .slider__slides {
+      width: 100%;
+    }
+
+    .slider__overlay {
+      height: 50%;
+      left: 0;
+      top: 50%;
+      z-index: 0;
+    }
+  }
+}
