@@ -1,6 +1,6 @@
 import React from "react";
-import { Product } from "../types/Product";
-import "../styles/SlideContent.scss";
+import { Product } from "../../types/Product";
+import "./SlideContent.scss";
 
 interface SlideContentProps {
   products: Product[];

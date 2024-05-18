@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "../styles/SliderButtons.scss";
+import "./SliderButtons.scss";
 
 interface SliderButtonsProps {
   products: any[];

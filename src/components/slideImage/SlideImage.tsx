@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/SlideImage.scss";
+import "./SlideImage.scss";
 
 interface SlideImageProps {
   src: string;

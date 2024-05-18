@@ -1,9 +1,9 @@
 import React, { useEffect, useState, useRef } from "react";
-import SlideImage from "../components/SlideImage";
-import SlideContent from "../components/SlideContent";
-import SliderButtons from "../components/SliderButtons";
+import SlideImage from "../components/slideImage/SlideImage";
+import SlideContent from "../components/slideContent/SlideContent";
+import SliderButtons from "../components/sliderButtons/SliderButtons";
 import { Product } from "../types/Product";
-import "../styles/Slider.scss";
+import "./Slider.scss";
 
 interface SliderProps {
   products: Product[];
