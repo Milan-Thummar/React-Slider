@@ -58,4 +58,4 @@ After following all the above steps, the project will run successfully and open 
 
 ## Slider Screenshot
 
-![Slider Image](public/image/slider.png)
+![Slider Image](public/Image/slider.png)
