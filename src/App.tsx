@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./styles/App.scss";
+import "./App.scss";
 import { Product } from "./types/Product";
 import Slider from "./pages/Slider";
 import { fetchData } from "./components/fetchData/FetchData";
